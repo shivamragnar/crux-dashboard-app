@@ -1,6 +1,7 @@
 import { CRUX_API_URL } from "@/utils"
 
 export async function POST(req) {
+  console.log('process', process.env.CRUX_API_KEY)
   try {
     const body = await req.json()
     const { origins } = body
